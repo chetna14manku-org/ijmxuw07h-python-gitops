@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: ijmxuw07h-python-gitops
+  description: This is GitOps manifest for ijmxuw07h-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=ijmxuw07h-python
+    backstage.io/kubernetes-id: ijmxuw07h-python 
+    backstage.io/techdocs-ref: dir:. 
+    github.com/project-slug: chetna14manku-org/ijmxuw07h-python-gitops   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:ijmxuw07h-python
